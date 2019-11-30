@@ -9,23 +9,35 @@
 /* Begin PBXBuildFile section */
 		BD8BE9FB2391D24F0063A357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8BE9FA2391D24F0063A357 /* AppDelegate.swift */; };
 		BD8BE9FD2391D24F0063A357 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8BE9FC2391D24F0063A357 /* SceneDelegate.swift */; };
-		BD8BE9FF2391D24F0063A357 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8BE9FE2391D24F0063A357 /* ViewController.swift */; };
 		BD8BEA022391D24F0063A357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8BEA002391D24F0063A357 /* Main.storyboard */; };
 		BD8BEA052391D24F0063A357 /* MyGames.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD8BEA032391D24F0063A357 /* MyGames.xcdatamodeld */; };
 		BD8BEA072391D2500063A357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8BEA062391D2500063A357 /* Assets.xcassets */; };
 		BD8BEA0A2391D2500063A357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8BEA082391D2500063A357 /* LaunchScreen.storyboard */; };
+		BDB1602F2391E651006CFA59 /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB1602E2391E651006CFA59 /* GamesTableViewController.swift */; };
+		BDB160312391F047006CFA59 /* ConsolesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB160302391F047006CFA59 /* ConsolesTableViewController.swift */; };
+		BDB160332391F095006CFA59 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB160322391F095006CFA59 /* GameViewController.swift */; };
+		BDB160352391F0A8006CFA59 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB160342391F0A8006CFA59 /* AddEditViewController.swift */; };
+		BDB160382391F134006CFA59 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB160372391F134006CFA59 /* GameTableViewCell.swift */; };
+		BDB1603A23929EE7006CFA59 /* ViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB1603923929EE7006CFA59 /* ViewController+CoreData.swift */; };
+		BDB1603C2392AED8006CFA59 /* ConsolesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB1603B2392AED8006CFA59 /* ConsolesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD8BE9F72391D24F0063A357 /* MyGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8BE9FA2391D24F0063A357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD8BE9FC2391D24F0063A357 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD8BE9FE2391D24F0063A357 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD8BEA012391D24F0063A357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD8BEA042391D24F0063A357 /* MyGames.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyGames.xcdatamodel; sourceTree = "<group>"; };
 		BD8BEA062391D2500063A357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD8BEA092391D2500063A357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD8BEA0B2391D2500063A357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB1602E2391E651006CFA59 /* GamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
+		BDB160302391F047006CFA59 /* ConsolesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolesTableViewController.swift; sourceTree = "<group>"; };
+		BDB160322391F095006CFA59 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BDB160342391F0A8006CFA59 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
+		BDB160372391F134006CFA59 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		BDB1603923929EE7006CFA59 /* ViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CoreData.swift"; sourceTree = "<group>"; };
+		BDB1603B2392AED8006CFA59 /* ConsolesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,46 @@
 		BD8BE9F92391D24F0063A357 /* MyGames */ = {
 			isa = PBXGroup;
 			children = (
+				BDB1602D2391E626006CFA59 /* controllers */,
 				BD8BE9FA2391D24F0063A357 /* AppDelegate.swift */,
 				BD8BE9FC2391D24F0063A357 /* SceneDelegate.swift */,
-				BD8BE9FE2391D24F0063A357 /* ViewController.swift */,
-				BD8BEA002391D24F0063A357 /* Main.storyboard */,
+				BDB1602C2391E609006CFA59 /* views */,
 				BD8BEA062391D2500063A357 /* Assets.xcassets */,
-				BD8BEA082391D2500063A357 /* LaunchScreen.storyboard */,
 				BD8BEA0B2391D2500063A357 /* Info.plist */,
 				BD8BEA032391D24F0063A357 /* MyGames.xcdatamodeld */,
 			);
 			path = MyGames;
+			sourceTree = "<group>";
+		};
+		BDB1602C2391E609006CFA59 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BD8BEA002391D24F0063A357 /* Main.storyboard */,
+				BD8BEA082391D2500063A357 /* LaunchScreen.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		BDB1602D2391E626006CFA59 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BDB160362391F0EB006CFA59 /* cells */,
+				BDB1602E2391E651006CFA59 /* GamesTableViewController.swift */,
+				BDB160302391F047006CFA59 /* ConsolesTableViewController.swift */,
+				BDB160322391F095006CFA59 /* GameViewController.swift */,
+				BDB160342391F0A8006CFA59 /* AddEditViewController.swift */,
+				BDB1603923929EE7006CFA59 /* ViewController+CoreData.swift */,
+				BDB1603B2392AED8006CFA59 /* ConsolesManager.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		BDB160362391F0EB006CFA59 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				BDB160372391F134006CFA59 /* GameTableViewCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8BE9FF2391D24F0063A357 /* ViewController.swift in Sources */,
 				BD8BE9FB2391D24F0063A357 /* AppDelegate.swift in Sources */,
+				BDB160352391F0A8006CFA59 /* AddEditViewController.swift in Sources */,
+				BDB1602F2391E651006CFA59 /* GamesTableViewController.swift in Sources */,
 				BD8BE9FD2391D24F0063A357 /* SceneDelegate.swift in Sources */,
 				BD8BEA052391D24F0063A357 /* MyGames.xcdatamodeld in Sources */,
+				BDB1603A23929EE7006CFA59 /* ViewController+CoreData.swift in Sources */,
+				BDB160332391F095006CFA59 /* GameViewController.swift in Sources */,
+				BDB1603C2392AED8006CFA59 /* ConsolesManager.swift in Sources */,
+				BDB160312391F047006CFA59 /* ConsolesTableViewController.swift in Sources */,
+				BDB160382391F134006CFA59 /* GameTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +335,6 @@
 		BD8BEA0F2391D2500063A357 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6PN6V35AZY;
 				INFOPLIST_FILE = MyGames/Info.plist;
@@ -298,14 +345,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fabiolindemberg.MyGames;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BD8BEA102391D2500063A357 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6PN6V35AZY;
 				INFOPLIST_FILE = MyGames/Info.plist;
@@ -316,7 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fabiolindemberg.MyGames;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
