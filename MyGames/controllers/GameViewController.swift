@@ -14,6 +14,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var lbConsole: UILabel!
     @IBOutlet weak var lbReleaseDate: UILabel!
     @IBOutlet weak var ivCover: UIImageView!
+    @IBOutlet weak var ibConsoleImage: UIImageView?
     
     var game: Game!
     override func viewDidLoad() {
@@ -27,6 +28,9 @@ class GameViewController: UIViewController {
        
         lbTitle.text = game.title
         lbConsole.text = game.console?.name
+        if let image = game.console?.image as? UIImage{
+            ibConsoleImage?.image = image
+        }
         if let releaseDate = game.releaseDate {
             let formatter = DateFormatter()
             formatter.dateStyle = .long
@@ -42,7 +46,7 @@ class GameViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! AddEditViewController
+        let vc = segue.destination as! GameInputViewController
         vc.game = game
     }
     

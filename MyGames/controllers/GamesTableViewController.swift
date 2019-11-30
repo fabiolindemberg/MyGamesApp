@@ -51,8 +51,9 @@ class GamesTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! GameViewController
-        vc.game = fetchedResultController.fetchedObjects?[tableView.indexPathForSelectedRow!.row]
+        if let vc = segue.destination as? GameViewController {
+            vc.game = fetchedResultController.fetchedObjects?[tableView.indexPathForSelectedRow!.row]
+        }
     }
 
 
@@ -131,6 +132,11 @@ class GamesTableViewController: UITableViewController {
             }
         }
     }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+
 }
 
 extension GamesTableViewController: NSFetchedResultsControllerDelegate {

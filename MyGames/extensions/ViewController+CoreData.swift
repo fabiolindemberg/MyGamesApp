@@ -32,5 +32,15 @@ extension UIViewController {
             self.navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
         }
     }
+    
+    public func dismissKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc public func dismissKeyboard() {
+        view.endEditing(true)
+    }
 
 }

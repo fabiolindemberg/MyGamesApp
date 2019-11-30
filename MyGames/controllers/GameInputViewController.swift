@@ -9,7 +9,7 @@
 import UIKit
 import Photos
 
-class AddEditViewController: UIViewController {
+class GameInputViewController: UIViewController {
     
     @IBOutlet weak var tfTitle: UITextField!
     @IBOutlet weak var tfConsole: UITextField!
@@ -83,7 +83,7 @@ class AddEditViewController: UIViewController {
         prepareDataLayout()
     }
     
-    private  func selectPicture(sourceType: UIImagePickerController.SourceType) {
+    private func selectPicture(sourceType: UIImagePickerController.SourceType) {
         
         //Photos
         let photos = PHPhotoLibrary.authorizationStatus()
@@ -118,7 +118,7 @@ class AddEditViewController: UIViewController {
         
     }
     
-    @IBAction func addEditCOver(_ sender: Any) {
+    @IBAction func addEditCover(_ sender: Any) {
         // para adicionar uma imagem da biblioteca
         print("para adicionar uma imagem da biblioteca")
         
@@ -142,6 +142,17 @@ class AddEditViewController: UIViewController {
     }
     
     @IBAction func addEditGame(_ sender: Any) {
+        
+        guard tfTitle.text ?? "" != "" else {
+            tfTitle.shake()
+            return
+        }
+        
+        guard tfConsole.text ?? "" != "" else {
+            tfConsole.shake()
+            return
+        }
+        
         if game == nil {
             game = Game(context: context)
         }
@@ -162,19 +173,10 @@ class AddEditViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
 
-extension AddEditViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+extension GameInputViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -190,7 +192,7 @@ extension AddEditViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
 }
 
-extension AddEditViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension GameInputViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // tip. implementando os 2 protocols o evento sera notificando apos user selecionar a imagem
     
