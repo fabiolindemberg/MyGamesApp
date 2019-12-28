@@ -13,19 +13,6 @@ class GamesTableViewController: UITableViewController {
 
     var fetchedResultController: NSFetchedResultsController<Game>!
     let searchController = UISearchController(searchResultsController: nil)
-//    private func loadGames() {
-//        let fetchRequest: NSFetchRequest<Game> = Game.fetchRequest()
-//        let gameTitleSortDescriptor = NSSortDescriptor(key: "title", ascending: true)
-//        fetchRequest.sortDescriptors = [gameTitleSortDescriptor]
-//        fetchedResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
-//        fetchedResultController.delegate = self
-//
-//        do {
-//             try fetchedResultController.performFetch()
-//        } catch {
-//            print(error.localizedDescription)
-//        }
-//    }
     
     func loadGames(filtering: String = "") {
         let fetchRequest: NSFetchRequest<Game> = Game.fetchRequest()
@@ -90,6 +77,11 @@ class GamesTableViewController: UITableViewController {
         setupSearchController()
         
         loadGames()
+        
+    }
+    
+    private func show(message: String) {
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

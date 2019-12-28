@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33DA2EFE23B7DE2E00D300C3 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DA2EFD23B7DE2E00D300C3 /* OnBoarding.storyboard */; };
+		33DA2F0023B7E20F00D300C3 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA2EFF23B7E20F00D300C3 /* OnBoardingViewController.swift */; };
+		33DA2F0223B7E79700D300C3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA2F0123B7E79700D300C3 /* TabBarViewController.swift */; };
 		BD8BE9FB2391D24F0063A357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8BE9FA2391D24F0063A357 /* AppDelegate.swift */; };
 		BD8BE9FD2391D24F0063A357 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8BE9FC2391D24F0063A357 /* SceneDelegate.swift */; };
 		BD8BEA022391D24F0063A357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8BEA002391D24F0063A357 /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33DA2EFD23B7DE2E00D300C3 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		33DA2EFF23B7E20F00D300C3 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		33DA2F0123B7E79700D300C3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		BD8BE9F72391D24F0063A357 /* MyGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8BE9FA2391D24F0063A357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD8BE9FC2391D24F0063A357 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33DA2EFC23B7DE1900D300C3 /* onBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				33DA2EFD23B7DE2E00D300C3 /* OnBoarding.storyboard */,
+				33DA2EFF23B7E20F00D300C3 /* OnBoardingViewController.swift */,
+			);
+			path = onBoarding;
+			sourceTree = "<group>";
+		};
 		BD8BE9EE2391D24E0063A357 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +89,7 @@
 		BD8BE9F92391D24F0063A357 /* MyGames */ = {
 			isa = PBXGroup;
 			children = (
+				33DA2EFC23B7DE1900D300C3 /* onBoarding */,
 				BD8BEA0B2391D2500063A357 /* Info.plist */,
 				BDB160442392F78B006CFA59 /* projectFiles */,
 				BDB1602D2391E626006CFA59 /* controllers */,
@@ -102,6 +118,7 @@
 				BDB160342391F0A8006CFA59 /* GameInputViewController.swift */,
 				BDB1602E2391E651006CFA59 /* GamesTableViewController.swift */,
 				BDB160322391F095006CFA59 /* GameViewController.swift */,
+				33DA2F0123B7E79700D300C3 /* TabBarViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -195,6 +212,7 @@
 				BD8BEA0A2391D2500063A357 /* LaunchScreen.storyboard in Resources */,
 				BD8BEA072391D2500063A357 /* Assets.xcassets in Resources */,
 				BD8BEA022391D24F0063A357 /* Main.storyboard in Resources */,
+				33DA2EFE23B7DE2E00D300C3 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,8 +227,10 @@
 				BDB160352391F0A8006CFA59 /* GameInputViewController.swift in Sources */,
 				BDB1602F2391E651006CFA59 /* GamesTableViewController.swift in Sources */,
 				BD8BE9FD2391D24F0063A357 /* SceneDelegate.swift in Sources */,
+				33DA2F0223B7E79700D300C3 /* TabBarViewController.swift in Sources */,
 				BDB160462392F8EE006CFA59 /* UIView.swift in Sources */,
 				BD8BEA052391D24F0063A357 /* MyGames.xcdatamodeld in Sources */,
+				33DA2F0023B7E20F00D300C3 /* OnBoardingViewController.swift in Sources */,
 				BDB1603A23929EE7006CFA59 /* ViewController+CoreData.swift in Sources */,
 				BDB160332391F095006CFA59 /* GameViewController.swift in Sources */,
 				BDB1603C2392AED8006CFA59 /* ConsolesManager.swift in Sources */,
@@ -360,7 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6PN6V35AZY;
+				DEVELOPMENT_TEAM = 2U4635Z85E;
 				INFOPLIST_FILE = MyGames/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -377,7 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6PN6V35AZY;
+				DEVELOPMENT_TEAM = 2U4635Z85E;
 				INFOPLIST_FILE = MyGames/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
