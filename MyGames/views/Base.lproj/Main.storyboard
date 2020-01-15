@@ -75,16 +75,6 @@
             </objects>
             <point key="canvasLocation" x="1158" y="-747"/>
         </scene>
-        <!--ConsoleInput-->
-        <scene sceneID="zt9-Dk-MzL">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ConsoleInput" id="wbT-7V-Stf" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="sD7-Ox-fVZ"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7w-HI-S4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3846" y="157"/>
-        </scene>
         <!--ConsoleList-->
         <scene sceneID="0T5-Zk-jhO">
             <objects>
@@ -94,26 +84,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMc-zq-Kl1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3019" y="156"/>
-        </scene>
-        <!--GameInput-->
-        <scene sceneID="Jsn-Ab-Kdw">
-            <objects>
-                <viewControllerPlaceholder storyboardName="GameInput" id="qgZ-gO-Q81" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="3Dv-yL-ejY"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SM7-7c-NjT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1833" y="828"/>
-        </scene>
-        <!--GameDetail-->
-        <scene sceneID="Xsw-Me-HQA">
-            <objects>
-                <viewControllerPlaceholder storyboardName="GameDetail" id="XAq-QL-YPv" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="yZo-f2-LFq"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XbF-B4-WZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1066.6666666666667" y="1320.5357142857142"/>
         </scene>
         <!--GameList-->
         <scene sceneID="iCc-gr-6Tv">
