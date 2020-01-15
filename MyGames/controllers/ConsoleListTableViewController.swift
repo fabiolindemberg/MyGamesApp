@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ConsolesTableViewController: UITableViewController {
+class ConsoleListTableViewController: UITableViewController {
 
     let consolesManager = ConsolesManager.shared
 

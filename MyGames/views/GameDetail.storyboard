@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WmA-7k-8kj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Detail View Controller-->
+        <scene sceneID="QEc-qj-ybj">
+            <objects>
+                <viewController id="WmA-7k-8kj" customClass="GameDetailViewController" customModule="MyGames" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="peF-ag-AXw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="God of War" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQM-Dc-29I">
+                                <rect key="frame" x="16" y="60" width="282.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" name="main"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Playstation 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0av-GN-m1V">
+                                <rect key="frame" x="16" y="93.5" width="282.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Lançamento: 20 de abril de 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qM9-d9-x1X">
+                                <rect key="frame" x="16" y="122.5" width="282.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="fqI-vb-i8t">
+                                <rect key="frame" x="24" y="167.5" width="366" height="670.5"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yfB-Pt-F4B">
+                                <rect key="frame" x="306.5" y="60" width="83.5" height="83.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83.5" id="Tal-7y-SyY"/>
+                                    <constraint firstAttribute="width" constant="83.5" id="ntz-oO-hxs"/>
+                                    <constraint firstAttribute="width" secondItem="yfB-Pt-F4B" secondAttribute="height" multiplier="1:1" id="tdk-hQ-lGA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0av-GN-m1V" firstAttribute="leading" secondItem="Kpa-rs-Cir" secondAttribute="leading" constant="16" id="22G-ev-qjL"/>
+                            <constraint firstItem="fqI-vb-i8t" firstAttribute="leading" secondItem="Kpa-rs-Cir" secondAttribute="leading" constant="24" id="64L-AS-ivK"/>
+                            <constraint firstItem="eQM-Dc-29I" firstAttribute="top" secondItem="Kpa-rs-Cir" secondAttribute="top" constant="16" id="74b-ek-G0l"/>
+                            <constraint firstItem="Kpa-rs-Cir" firstAttribute="bottom" secondItem="fqI-vb-i8t" secondAttribute="bottom" constant="24" id="BkP-T8-iYk"/>
+                            <constraint firstItem="Kpa-rs-Cir" firstAttribute="trailing" secondItem="yfB-Pt-F4B" secondAttribute="trailing" constant="24" id="ErW-lW-tPY"/>
+                            <constraint firstItem="Kpa-rs-Cir" firstAttribute="trailing" secondItem="fqI-vb-i8t" secondAttribute="trailing" constant="24" id="J5a-YA-gge"/>
+                            <constraint firstItem="fqI-vb-i8t" firstAttribute="top" secondItem="qM9-d9-x1X" secondAttribute="bottom" constant="24" id="Jwe-A9-KnG"/>
+                            <constraint firstItem="0av-GN-m1V" firstAttribute="trailing" secondItem="eQM-Dc-29I" secondAttribute="trailing" id="Q6P-Sa-vxY"/>
+                            <constraint firstItem="qM9-d9-x1X" firstAttribute="top" secondItem="0av-GN-m1V" secondAttribute="bottom" constant="8" id="R1z-0N-fgH"/>
+                            <constraint firstItem="yfB-Pt-F4B" firstAttribute="top" secondItem="Kpa-rs-Cir" secondAttribute="top" constant="16" id="YBk-Ox-dVt"/>
+                            <constraint firstItem="qM9-d9-x1X" firstAttribute="leading" secondItem="Kpa-rs-Cir" secondAttribute="leading" constant="16" id="bnG-9C-03s"/>
+                            <constraint firstItem="eQM-Dc-29I" firstAttribute="leading" secondItem="Kpa-rs-Cir" secondAttribute="leading" constant="16" id="br6-Ty-GcP"/>
+                            <constraint firstItem="yfB-Pt-F4B" firstAttribute="leading" secondItem="eQM-Dc-29I" secondAttribute="trailing" constant="8" id="ceW-tt-yZV"/>
+                            <constraint firstItem="fqI-vb-i8t" firstAttribute="top" secondItem="yfB-Pt-F4B" secondAttribute="bottom" constant="24" id="ndC-Nr-0TP"/>
+                            <constraint firstItem="0av-GN-m1V" firstAttribute="top" secondItem="eQM-Dc-29I" secondAttribute="bottom" constant="8" id="x6C-Ht-VMm"/>
+                            <constraint firstItem="qM9-d9-x1X" firstAttribute="trailing" secondItem="0av-GN-m1V" secondAttribute="trailing" id="ySG-pf-7LP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kpa-rs-Cir"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="lBr-ep-nhx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="b5b-8S-VjL">
+                            <connections>
+                                <segue destination="qgZ-gO-Q81" kind="show" id="2wE-dV-E1B"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ibConsoleImage" destination="yfB-Pt-F4B" id="T6e-jU-Lp2"/>
+                        <outlet property="ivCover" destination="fqI-vb-i8t" id="FYG-VW-CBz"/>
+                        <outlet property="lbConsole" destination="0av-GN-m1V" id="f7v-BS-93W"/>
+                        <outlet property="lbReleaseDate" destination="qM9-d9-x1X" id="wWo-No-sDJ"/>
+                        <outlet property="lbTitle" destination="eQM-Dc-29I" id="PtW-b5-he8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M4z-IC-2k5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066.6666666666667" y="1320.5357142857142"/>
+        </scene>
+        <!--GameInput-->
+        <scene sceneID="Jsn-Ab-Kdw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GameInput" id="qgZ-gO-Q81" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3Dv-yL-ejY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SM7-7c-NjT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="828"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="main">
+            <color red="0.0" green="0.68235294117647061" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>

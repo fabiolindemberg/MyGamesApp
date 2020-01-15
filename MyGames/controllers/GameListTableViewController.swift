@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class GamesTableViewController: UITableViewController {
+class GameListTableViewController: UITableViewController {
 
     var fetchedResultController: NSFetchedResultsController<Game>!
     let searchController = UISearchController(searchResultsController: nil)
@@ -38,7 +38,7 @@ class GamesTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? GameViewController {
+        if let vc = segue.destination as? GameDetailViewController {
             vc.game = fetchedResultController.fetchedObjects?[tableView.indexPathForSelectedRow!.row]
         }
     }
@@ -131,7 +131,7 @@ class GamesTableViewController: UITableViewController {
 
 }
 
-extension GamesTableViewController: NSFetchedResultsControllerDelegate {
+extension GameListTableViewController: NSFetchedResultsControllerDelegate {
    
     // sempre que algum objeto for modificado esse metodo sera notificado
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
@@ -149,7 +149,7 @@ extension GamesTableViewController: NSFetchedResultsControllerDelegate {
     }
 }
 
-extension GamesTableViewController: UISearchResultsUpdating, UISearchBarDelegate {
+extension GameListTableViewController: UISearchResultsUpdating, UISearchBarDelegate {
     func updateSearchResults(for searchController: UISearchController) {
         // TODO
     }
