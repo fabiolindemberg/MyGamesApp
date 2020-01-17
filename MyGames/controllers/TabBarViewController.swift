@@ -16,6 +16,7 @@ class TabBarViewController: UITabBarController {
         DispatchQueue.main.async {
             self.setupOnBoarding()
         }
+        
     }
 
     private func showAlert() {
@@ -25,17 +26,18 @@ class TabBarViewController: UITabBarController {
     }
     
     private func setupOnBoarding() {
-        let onBoardingStoryBoard = UIStoryboard(name: "OnBoarding", bundle: nil)
-        let onBoardingViewController = onBoardingStoryBoard.instantiateInitialViewController() as! OnBoardingViewController
         
-        onBoardingViewController.onDismissOnBoard = {
-            self.showAlert()
-        }
-        
-        self.present(onBoardingViewController, animated: true) {
-            let mainText = "Este aplicativo permite você administrar todos os seus jogos e fases ao longo do tempo!"
-            let detailText = "Divirta-se e compartilhe com seus amigos!"
-            onBoardingViewController.fillOnBoardingInfo(image: #imageLiteral(resourceName: "joystick"), mainText: mainText, detailText: detailText)
-        }
+        let onBoardingStoryBoard = UIStoryboard(name: "OnBoardingCollectionView", bundle: nil)
+        let onBoardingViewController = onBoardingStoryBoard.instantiateInitialViewController() as! OnBoardingCollectionViewController
+        self.present(onBoardingViewController, animated: true) 
+//        onBoardingViewController.onDismissOnBoard = {
+//            self.showAlert()
+//        }
+//
+//        self.present(onBoardingViewController, animated: true) {
+//            let mainText = "Este aplicativo permite você administrar todos os seus jogos e fases ao longo do tempo!"
+//            let detailText = "Divirta-se e compartilhe com seus amigos!"
+//            onBoardingViewController.fillOnBoardingInfo(image: #imageLiteral(resourceName: "joystick"), mainText: mainText, detailText: detailText)
+//        }
     }
 }

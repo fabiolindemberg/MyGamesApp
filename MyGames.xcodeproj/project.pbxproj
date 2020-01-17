@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		332FFC2C23CFF2BC0044775C /* OnBoardingCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 332FFC2B23CFF2BC0044775C /* OnBoardingCollectionView.storyboard */; };
+		332FFC3223D0976D0044775C /* OnBoardingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FFC3123D0976D0044775C /* OnBoardingCollectionViewController.swift */; };
+		332FFC3B23D1E3380044775C /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FFC3923D1E3380044775C /* OnboardingCollectionViewCell.swift */; };
+		332FFC3C23D1E3380044775C /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 332FFC3A23D1E3380044775C /* OnboardingCollectionViewCell.xib */; };
 		3395E7D723CEB27A00A146CE /* ConsoleInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7D523CEB27A00A146CE /* ConsoleInput.storyboard */; };
 		3395E7D923CEB31A00A146CE /* ConsoleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7D823CEB31A00A146CE /* ConsoleList.storyboard */; };
 		3395E7DC23CEB38500A146CE /* GameInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7DA23CEB38500A146CE /* GameInput.storyboard */; };
@@ -33,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		332FFC2B23CFF2BC0044775C /* OnBoardingCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoardingCollectionView.storyboard; sourceTree = "<group>"; };
+		332FFC3123D0976D0044775C /* OnBoardingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewController.swift; sourceTree = "<group>"; };
+		332FFC3923D1E3380044775C /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingCollectionViewCell.swift; path = "../New Group/OnboardingCollectionViewCell.swift"; sourceTree = "<group>"; };
+		332FFC3A23D1E3380044775C /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OnboardingCollectionViewCell.xib; path = "../New Group/OnboardingCollectionViewCell.xib"; sourceTree = "<group>"; };
 		3395E7D623CEB27A00A146CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MyGames/views/Base.lproj/ConsoleInput.storyboard; sourceTree = "<group>"; };
 		3395E7D823CEB31A00A146CE /* ConsoleList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConsoleList.storyboard; sourceTree = "<group>"; };
 		3395E7DB23CEB38500A146CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MyGames/views/Base.lproj/GameInput.storyboard; sourceTree = "<group>"; };
@@ -71,6 +79,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330BEB1B23CFF1C500CDF028 /* onBoargingCollection */ = {
+			isa = PBXGroup;
+			children = (
+				332FFC3923D1E3380044775C /* OnboardingCollectionViewCell.swift */,
+				332FFC3A23D1E3380044775C /* OnboardingCollectionViewCell.xib */,
+				332FFC2B23CFF2BC0044775C /* OnBoardingCollectionView.storyboard */,
+				332FFC3123D0976D0044775C /* OnBoardingCollectionViewController.swift */,
+			);
+			path = onBoargingCollection;
+			sourceTree = "<group>";
+		};
 		33DA2EFC23B7DE1900D300C3 /* onBoarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +119,7 @@
 		BD8BE9F92391D24F0063A357 /* MyGames */ = {
 			isa = PBXGroup;
 			children = (
+				330BEB1B23CFF1C500CDF028 /* onBoargingCollection */,
 				33DA2EFC23B7DE1900D300C3 /* onBoarding */,
 				BD8BEA0B2391D2500063A357 /* Info.plist */,
 				BDB160442392F78B006CFA59 /* projectFiles */,
@@ -226,6 +246,8 @@
 			files = (
 				3395E7DE23CEB3C500A146CE /* GameDetail.storyboard in Resources */,
 				3395E7DC23CEB38500A146CE /* GameInput.storyboard in Resources */,
+				332FFC3C23D1E3380044775C /* OnboardingCollectionViewCell.xib in Resources */,
+				332FFC2C23CFF2BC0044775C /* OnBoardingCollectionView.storyboard in Resources */,
 				3395E7E023CEB5AD00A146CE /* GameList.storyboard in Resources */,
 				BD8BEA0A2391D2500063A357 /* LaunchScreen.storyboard in Resources */,
 				BD8BEA072391D2500063A357 /* Assets.xcassets in Resources */,
@@ -243,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332FFC3223D0976D0044775C /* OnBoardingCollectionViewController.swift in Sources */,
 				BD8BE9FB2391D24F0063A357 /* AppDelegate.swift in Sources */,
 				BDB160352391F0A8006CFA59 /* GameInputViewController.swift in Sources */,
+				332FFC3B23D1E3380044775C /* OnboardingCollectionViewCell.swift in Sources */,
 				BDB1602F2391E651006CFA59 /* GameListTableViewController.swift in Sources */,
 				BD8BE9FD2391D24F0063A357 /* SceneDelegate.swift in Sources */,
 				33DA2F0223B7E79700D300C3 /* TabBarViewController.swift in Sources */,
