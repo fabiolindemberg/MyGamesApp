@@ -40,7 +40,7 @@ extension OnBoardingCollectionViewController: UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCollectionViewCell", for: indexPath) as! OnboardingCollectionViewCell
         let row = indexPath.row
-        cell.populate(model: itens[row])
+        cell.fill(item: itens[row])
 
         return cell
     }
@@ -52,7 +52,7 @@ extension OnBoardingCollectionViewController: UICollectionViewDelegateFlowLayout
                        layout collectionViewLayout: UICollectionViewLayout,
                        sizeForItemAt indexPath: IndexPath) -> CGSize {
     //let height = self.view.frame.height * 0.8
-    return CGSize(width: collectionView.frame.width * 0.7, height: collectionView.frame.height)
+    return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
    }
    
    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
