@@ -16,7 +16,14 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.willTransition(to: newCollection, with: coordinator)
+        
+        if newCollection.horizontalSizeClass == .regular {
+            let viewController = LoginLandscapeViewController(nibName: "LoginLandscapeViewController", bundle: nil)
+            self.present(viewController, animated: true)
+        }
+    }
     /*
     // MARK: - Navigation
 
