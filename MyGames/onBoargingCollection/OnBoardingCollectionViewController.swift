@@ -10,8 +10,8 @@ import UIKit
 
 class OnBoardingCollectionViewController: UIViewController {
 
-    var itens = OnBoardingInfo.getOnboardingInfo()
-    
+    var itens: [OnBoardingInfo] = []
+    var complitionHandler: (()->Void)? = nil
     private let reusableIdentifier = "cell"
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -28,6 +28,11 @@ class OnBoardingCollectionViewController: UIViewController {
         super.viewDidLoad()
 
         setupCollectionView()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        complitionHandler?()
     }
 
 }

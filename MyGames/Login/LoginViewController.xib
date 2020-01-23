@@ -46,6 +46,9 @@
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnLoginClick:" destination="-1" eventType="touchUpInside" id="Sdc-HB-3T3"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

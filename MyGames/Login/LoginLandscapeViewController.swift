@@ -28,6 +28,11 @@ class LoginLandscapeViewController: UIViewController {
 
     }
 
+    @IBAction func btnLoginClick(_ sender: Any) {
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        let tavBarViewController = mainStoryBoard.instantiateInitialViewController() as! TabBarViewController
+        self.present(tavBarViewController, animated: true)
+    }
     /*
     // MARK: - Navigation
 

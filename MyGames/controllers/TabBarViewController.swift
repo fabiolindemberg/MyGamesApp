@@ -13,9 +13,9 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        DispatchQueue.main.async {
-            self.setupOnBoarding()
-        }
+//        DispatchQueue.main.async {
+//            self.setupOnBoarding()
+//        }
         
     }
 
@@ -30,14 +30,6 @@ class TabBarViewController: UITabBarController {
         let onBoardingStoryBoard = UIStoryboard(name: "OnBoardingCollectionView", bundle: nil)
         let onBoardingViewController = onBoardingStoryBoard.instantiateInitialViewController() as! OnBoardingCollectionViewController
         self.present(onBoardingViewController, animated: true) 
-//        onBoardingViewController.onDismissOnBoard = {
-//            self.showAlert()
-//        }
-//
-//        self.present(onBoardingViewController, animated: true) {
-//            let mainText = "Este aplicativo permite você administrar todos os seus jogos e fases ao longo do tempo!"
-//            let detailText = "Divirta-se e compartilhe com seus amigos!"
-//            onBoardingViewController.fillOnBoardingInfo(image: #imageLiteral(resourceName: "joystick"), mainText: mainText, detailText: detailText)
-//        }
+
     }
 }

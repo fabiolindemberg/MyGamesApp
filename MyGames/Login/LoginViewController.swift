@@ -13,16 +13,34 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        DispatchQueue.main.async {
+            self.setupOnBoarding()
+        }
     }
 
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
         super.willTransition(to: newCollection, with: coordinator)
         
-        if newCollection.horizontalSizeClass == .regular {
+        if newCollection.horizontalSizeClass == .regular || newCollection.horizontalSizeClass == .compact {
             let viewController = LoginLandscapeViewController(nibName: "LoginLandscapeViewController", bundle: nil)
             self.present(viewController, animated: true)
         }
+    }
+    
+    private func setupOnBoarding() {
+        
+        let onBoardingStoryBoard = UIStoryboard(name: "OnBoardingCollectionView", bundle: nil)
+        let onBoardingViewController = onBoardingStoryBoard.instantiateInitialViewController() as! OnBoardingCollectionViewController
+        onBoardingViewController.itens = OnBoardingInfo.getOnboardingInfo()
+        self.present(onBoardingViewController, animated: true)
+
+    }
+    
+    
+    @IBAction func btnLoginClick(_ sender: Any) {
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        let tavBarViewController = mainStoryBoard.instantiateInitialViewController() as! TabBarViewController
+        self.present(tavBarViewController, animated: true)
     }
     /*
     // MARK: - Navigation
