@@ -16,6 +16,10 @@
 		3395E7E023CEB5AD00A146CE /* GameList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7DF23CEB5AD00A146CE /* GameList.storyboard */; };
 		33A23DFD23D9169A00EA5F94 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A23DFC23D9169A00EA5F94 /* OnboardingCollectionViewCell.swift */; };
 		33A23DFF23D9189C00EA5F94 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33A23DFE23D9189C00EA5F94 /* OnboardingCollectionViewCell.xib */; };
+		33D0766023D9457C0058CD8F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D0765E23D9457C0058CD8F /* LoginViewController.swift */; };
+		33D0766123D9457C0058CD8F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D0765F23D9457C0058CD8F /* LoginViewController.xib */; };
+		33D0766423D954AA0058CD8F /* LoginLandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D0766223D954AA0058CD8F /* LoginLandscapeViewController.swift */; };
+		33D0766523D954AA0058CD8F /* LoginLandscapeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D0766323D954AA0058CD8F /* LoginLandscapeViewController.xib */; };
 		33DA2EFE23B7DE2E00D300C3 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DA2EFD23B7DE2E00D300C3 /* OnBoarding.storyboard */; };
 		33DA2F0023B7E20F00D300C3 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA2EFF23B7E20F00D300C3 /* OnBoardingViewController.swift */; };
 		33DA2F0223B7E79700D300C3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DA2F0123B7E79700D300C3 /* TabBarViewController.swift */; };
@@ -43,9 +47,13 @@
 		3395E7D823CEB31A00A146CE /* ConsoleList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConsoleList.storyboard; sourceTree = "<group>"; };
 		3395E7DB23CEB38500A146CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MyGames/views/Base.lproj/GameInput.storyboard; sourceTree = "<group>"; };
 		3395E7DD23CEB3C500A146CE /* GameDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameDetail.storyboard; sourceTree = "<group>"; };
-		3395E7DF23CEB5AD00A146CE /* GameList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GameList.storyboard; path = MyGames/views/MyGames/views/GameList.storyboard; sourceTree = "<group>"; };
+		3395E7DF23CEB5AD00A146CE /* GameList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameList.storyboard; sourceTree = "<group>"; };
 		33A23DFC23D9169A00EA5F94 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		33A23DFE23D9189C00EA5F94 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		33D0765E23D9457C0058CD8F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		33D0765F23D9457C0058CD8F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		33D0766223D954AA0058CD8F /* LoginLandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLandscapeViewController.swift; sourceTree = "<group>"; };
+		33D0766323D954AA0058CD8F /* LoginLandscapeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginLandscapeViewController.xib; sourceTree = "<group>"; };
 		33DA2EFD23B7DE2E00D300C3 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		33DA2EFF23B7E20F00D300C3 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		33DA2F0123B7E79700D300C3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +98,17 @@
 			path = onBoargingCollection;
 			sourceTree = "<group>";
 		};
+		33D0765D23D945500058CD8F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				33D0765E23D9457C0058CD8F /* LoginViewController.swift */,
+				33D0765F23D9457C0058CD8F /* LoginViewController.xib */,
+				33D0766223D954AA0058CD8F /* LoginLandscapeViewController.swift */,
+				33D0766323D954AA0058CD8F /* LoginLandscapeViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		33DA2EFC23B7DE1900D300C3 /* onBoarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +121,6 @@
 		BD8BE9EE2391D24E0063A357 = {
 			isa = PBXGroup;
 			children = (
-				3395E7DF23CEB5AD00A146CE /* GameList.storyboard */,
 				BD8BE9F92391D24F0063A357 /* MyGames */,
 				BD8BE9F82391D24F0063A357 /* Products */,
 			);
@@ -119,6 +137,7 @@
 		BD8BE9F92391D24F0063A357 /* MyGames */ = {
 			isa = PBXGroup;
 			children = (
+				33D0765D23D945500058CD8F /* Login */,
 				330BEB1B23CFF1C500CDF028 /* onBoargingCollection */,
 				33DA2EFC23B7DE1900D300C3 /* onBoarding */,
 				BD8BEA0B2391D2500063A357 /* Info.plist */,
@@ -133,6 +152,7 @@
 		BDB1602C2391E609006CFA59 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				3395E7DF23CEB5AD00A146CE /* GameList.storyboard */,
 				3395E7DD23CEB3C500A146CE /* GameDetail.storyboard */,
 				3395E7DA23CEB38500A146CE /* GameInput.storyboard */,
 				3395E7D523CEB27A00A146CE /* ConsoleInput.storyboard */,
@@ -252,6 +272,8 @@
 				BD8BEA0A2391D2500063A357 /* LaunchScreen.storyboard in Resources */,
 				BD8BEA072391D2500063A357 /* Assets.xcassets in Resources */,
 				3395E7D923CEB31A00A146CE /* ConsoleList.storyboard in Resources */,
+				33D0766523D954AA0058CD8F /* LoginLandscapeViewController.xib in Resources */,
+				33D0766123D9457C0058CD8F /* LoginViewController.xib in Resources */,
 				BD8BEA022391D24F0063A357 /* Main.storyboard in Resources */,
 				33DA2EFE23B7DE2E00D300C3 /* OnBoarding.storyboard in Resources */,
 				3395E7D723CEB27A00A146CE /* ConsoleInput.storyboard in Resources */,
@@ -278,6 +300,8 @@
 				BDB1603A23929EE7006CFA59 /* ViewController+CoreData.swift in Sources */,
 				BDB160332391F095006CFA59 /* GameDetailViewController.swift in Sources */,
 				BDB1603C2392AED8006CFA59 /* ConsolesManager.swift in Sources */,
+				33D0766023D9457C0058CD8F /* LoginViewController.swift in Sources */,
+				33D0766423D954AA0058CD8F /* LoginLandscapeViewController.swift in Sources */,
 				BDB160312391F047006CFA59 /* ConsoleListTableViewController.swift in Sources */,
 				BDB160382391F134006CFA59 /* GameTableViewCell.swift in Sources */,
 				BDB160422392E262006CFA59 /* ConsoleInputViewController.swift in Sources */,
