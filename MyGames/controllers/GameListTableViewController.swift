@@ -109,6 +109,18 @@ class GameListTableViewController: UITableViewController {
         }
                
         cell.prepare(with: game)
+        
+        cell.favoriteClickHandler = { [weak self] in
+            do {
+                game.favorite = !game.favorite
+                try self?.context.save()
+                cell.prepare(with: game)
+            } catch {
+                print(error)
+            }
+            
+        }
+        
         return cell
     }
     
