@@ -15,9 +15,18 @@ class GameTableViewCell: UITableViewCell {
     @IBOutlet weak var lbConsole: UILabel!
     @IBOutlet weak var ivFavorite: UIImageView!
     
+    var favoriteClickHandler: (()->Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        ivFavorite.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(clickHandler)))
+        
+    }
+    
+    @objc
+    private func clickHandler(gesture: UITapGestureRecognizer) {
+        favoriteClickHandler?()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -29,11 +38,10 @@ class GameTableViewCell: UITableViewCell {
     func prepare(with game: Game) {
         lbTitle.text = game.title ?? ""
         lbConsole.text = game.console?.name ?? ""
-        if let image = game.cover as? UIImage {
-            ivCover.image = image
-        } else {
-            ivCover.image = UIImage(named: "noCover")
-        }
+        
+        let image = game.cover as? UIImage
+        ivCover.image = image != nil ? image! : UIImage(named: "noCover")
+     
+        ivFavorite.image = game.favorite ? UIImage(named: "starOn") : UIImage(named: "starOff")
     }
-
 }
