@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3300E57723D9C32600BE8DA6 /* FavoriteGameList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3300E57623D9C32600BE8DA6 /* FavoriteGameList.storyboard */; };
 		332FFC2C23CFF2BC0044775C /* OnBoardingCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 332FFC2B23CFF2BC0044775C /* OnBoardingCollectionView.storyboard */; };
 		332FFC3223D0976D0044775C /* OnBoardingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FFC3123D0976D0044775C /* OnBoardingCollectionViewController.swift */; };
 		3395E7D723CEB27A00A146CE /* ConsoleInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7D523CEB27A00A146CE /* ConsoleInput.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3300E57623D9C32600BE8DA6 /* FavoriteGameList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavoriteGameList.storyboard; sourceTree = "<group>"; };
 		332FFC2B23CFF2BC0044775C /* OnBoardingCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoardingCollectionView.storyboard; sourceTree = "<group>"; };
 		332FFC3123D0976D0044775C /* OnBoardingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewController.swift; sourceTree = "<group>"; };
 		3395E7D623CEB27A00A146CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MyGames/views/Base.lproj/ConsoleInput.storyboard; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		BDB1602C2391E609006CFA59 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				3300E57623D9C32600BE8DA6 /* FavoriteGameList.storyboard */,
 				3395E7DF23CEB5AD00A146CE /* GameList.storyboard */,
 				3395E7DD23CEB3C500A146CE /* GameDetail.storyboard */,
 				3395E7DA23CEB38500A146CE /* GameInput.storyboard */,
@@ -266,6 +269,7 @@
 			files = (
 				33A23DFF23D9189C00EA5F94 /* OnboardingCollectionViewCell.xib in Resources */,
 				3395E7DE23CEB3C500A146CE /* GameDetail.storyboard in Resources */,
+				3300E57723D9C32600BE8DA6 /* FavoriteGameList.storyboard in Resources */,
 				3395E7DC23CEB38500A146CE /* GameInput.storyboard in Resources */,
 				332FFC2C23CFF2BC0044775C /* OnBoardingCollectionView.storyboard in Resources */,
 				3395E7E023CEB5AD00A146CE /* GameList.storyboard in Resources */,

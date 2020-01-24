@@ -13,6 +13,7 @@ class GameTableViewCell: UITableViewCell {
     @IBOutlet weak var ivCover: UIImageView!
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var lbConsole: UILabel!
+    @IBOutlet weak var ivFavorite: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
