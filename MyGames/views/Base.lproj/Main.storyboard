@@ -11,7 +11,7 @@
         <scene sceneID="Xyh-fm-QMF">
             <objects>
                 <navigationController id="An9-Nc-3QV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="SjH-TA-Lhr"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="favorite" id="SjH-TA-Lhr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mPN-qu-pbK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -126,6 +126,7 @@
     </scenes>
     <resources>
         <image name="console" width="23" height="23"/>
+        <image name="favorite" width="24" height="24"/>
         <image name="game" width="23" height="23"/>
         <namedColor name="main">
             <color red="0.0" green="0.68235294117647061" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

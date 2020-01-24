@@ -1,15 +1,15 @@
 //
-//  GameTableViewCell.swift
+//  CollectionViewCell.swift
 //  MyGames
 //
-//  Created by Fabio Estudo on 29/11/19.
-//  Copyright © 2019 Fabio Estudo. All rights reserved.
+//  Created by Fábio Pereira on 24/01/20.
+//  Copyright © 2020 Fabio Estudo. All rights reserved.
 //
 
 import UIKit
 
-class GameTableViewCell: UITableViewCell {
-
+class GameCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var ivCover: UIImageView!
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var lbConsole: UILabel!
@@ -27,12 +27,6 @@ class GameTableViewCell: UITableViewCell {
     @objc
     private func clickHandler(gesture: UITapGestureRecognizer) {
         favoriteClickHandler?()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func fill(with game: Game) {

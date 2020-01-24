@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Lista de Jogos-->
+        <!--Jogos-->
         <scene sceneID="8v6-mw-n12">
             <objects>
-                <tableViewController id="rd7-Kw-EEh" customClass="GameListTableViewController" customModule="MyGames" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Jogos" id="rd7-Kw-EEh" customClass="GameListTableViewController" customModule="MyGames" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="E4a-d0-89c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,30 +35,30 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0U-Uo-x15">
-                                            <rect key="frame" x="78.5" y="16" width="280.5" height="21"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <rect key="frame" x="78.5" y="16" width="251" height="24"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7c-qe-jAT">
-                                            <rect key="frame" x="78.5" y="45" width="280.5" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="78.5" y="48" width="251" height="18"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GKd-vc-dkq">
-                                            <rect key="frame" x="319.5" y="25" width="50" height="50"/>
+                                            <rect key="frame" x="329.5" y="35" width="30" height="30"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="7nc-Jg-UP3"/>
+                                                <constraint firstAttribute="width" constant="30" id="7nc-Jg-UP3"/>
                                                 <constraint firstAttribute="width" secondItem="GKd-vc-dkq" secondAttribute="height" multiplier="1:1" id="GC8-EK-1RC"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="L7c-qe-jAT" secondAttribute="trailing" constant="16" id="2BH-1N-dYB"/>
+                                        <constraint firstItem="GKd-vc-dkq" firstAttribute="leadingMargin" secondItem="L7c-qe-jAT" secondAttribute="trailing" constant="8" id="2BH-1N-dYB"/>
                                         <constraint firstItem="H0U-Uo-x15" firstAttribute="leading" secondItem="B7m-co-thI" secondAttribute="trailing" constant="8" id="81c-iZ-f1j"/>
                                         <constraint firstItem="B7m-co-thI" firstAttribute="top" secondItem="Ois-t0-vKx" secondAttribute="top" constant="16" id="AQq-uh-6PS"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="H0U-Uo-x15" secondAttribute="trailing" constant="16" id="HCq-LM-gEt"/>
+                                        <constraint firstItem="GKd-vc-dkq" firstAttribute="leadingMargin" secondItem="H0U-Uo-x15" secondAttribute="trailing" constant="8" id="HCq-LM-gEt"/>
                                         <constraint firstAttribute="bottom" secondItem="B7m-co-thI" secondAttribute="bottom" constant="16" id="I8j-W3-09n"/>
                                         <constraint firstItem="GKd-vc-dkq" firstAttribute="centerX" secondItem="Ois-t0-vKx" secondAttribute="centerX" multiplier="1.8" id="JBX-FV-wEf"/>
                                         <constraint firstItem="L7c-qe-jAT" firstAttribute="leading" secondItem="B7m-co-thI" secondAttribute="trailing" constant="8" id="LaA-FL-tFY"/>

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3300E57723D9C32600BE8DA6 /* FavoriteGameList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3300E57623D9C32600BE8DA6 /* FavoriteGameList.storyboard */; };
+		3300E57923DB0EF400BE8DA6 /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300E57823DB0EF400BE8DA6 /* GameCollectionViewCell.swift */; };
+		3300E57B23DB0F3600BE8DA6 /* FavoriteGameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300E57A23DB0F3600BE8DA6 /* FavoriteGameListViewController.swift */; };
 		332FFC2C23CFF2BC0044775C /* OnBoardingCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 332FFC2B23CFF2BC0044775C /* OnBoardingCollectionView.storyboard */; };
 		332FFC3223D0976D0044775C /* OnBoardingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FFC3123D0976D0044775C /* OnBoardingCollectionViewController.swift */; };
 		3395E7D723CEB27A00A146CE /* ConsoleInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3395E7D523CEB27A00A146CE /* ConsoleInput.storyboard */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		3300E57623D9C32600BE8DA6 /* FavoriteGameList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavoriteGameList.storyboard; sourceTree = "<group>"; };
+		3300E57823DB0EF400BE8DA6 /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
+		3300E57A23DB0F3600BE8DA6 /* FavoriteGameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteGameListViewController.swift; sourceTree = "<group>"; };
 		332FFC2B23CFF2BC0044775C /* OnBoardingCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoardingCollectionView.storyboard; sourceTree = "<group>"; };
 		332FFC3123D0976D0044775C /* OnBoardingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewController.swift; sourceTree = "<group>"; };
 		3395E7D623CEB27A00A146CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MyGames/views/Base.lproj/ConsoleInput.storyboard; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				BDB1602E2391E651006CFA59 /* GameListTableViewController.swift */,
 				BDB160322391F095006CFA59 /* GameDetailViewController.swift */,
 				33DA2F0123B7E79700D300C3 /* TabBarViewController.swift */,
+				3300E57A23DB0F3600BE8DA6 /* FavoriteGameListViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				BDB160372391F134006CFA59 /* GameTableViewCell.swift */,
+				3300E57823DB0EF400BE8DA6 /* GameCollectionViewCell.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -301,11 +307,13 @@
 				BDB160462392F8EE006CFA59 /* UIView.swift in Sources */,
 				BD8BEA052391D24F0063A357 /* MyGames.xcdatamodeld in Sources */,
 				33DA2F0023B7E20F00D300C3 /* OnBoardingViewController.swift in Sources */,
+				3300E57923DB0EF400BE8DA6 /* GameCollectionViewCell.swift in Sources */,
 				BDB1603A23929EE7006CFA59 /* ViewController+CoreData.swift in Sources */,
 				BDB160332391F095006CFA59 /* GameDetailViewController.swift in Sources */,
 				BDB1603C2392AED8006CFA59 /* ConsolesManager.swift in Sources */,
 				33D0766023D9457C0058CD8F /* LoginViewController.swift in Sources */,
 				33D0766423D954AA0058CD8F /* LoginLandscapeViewController.swift in Sources */,
+				3300E57B23DB0F3600BE8DA6 /* FavoriteGameListViewController.swift in Sources */,
 				BDB160312391F047006CFA59 /* ConsoleListTableViewController.swift in Sources */,
 				BDB160382391F134006CFA59 /* GameTableViewCell.swift in Sources */,
 				BDB160422392E262006CFA59 /* ConsoleInputViewController.swift in Sources */,

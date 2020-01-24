@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Adicionar Novo Plataforma-->
+        <!--Consile-->
         <scene sceneID="5p1-DL-zTT">
             <objects>
-                <viewController id="vx6-nU-ayS" customClass="ConsoleInputViewController" customModule="MyGames" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Consile" id="vx6-nU-ayS" customClass="ConsoleInputViewController" customModule="MyGames" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FBp-cU-tvz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
